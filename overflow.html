@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Scroll</title>
+    <style>
+        section, header{
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin-right: 5px;
+            padding: 10px;
+            border: 4px solid steelblue;
+            overflow: auto;
+            /* overflow: scroll; */
+            /* overflow-x: hidden; */
+            /* overflow: hidden; */
+        }
+        .ellipsis{
+            width: 200px;
+            border: 4px solid salmon;
+            white-space: nowrap;
+            overflow: hidden;
+            /* text-overflow: clip; */
+            text-overflow: ellipsis;
+        }
+        .box-no{
+            background-color: slateblue;
+        }
+        .box p:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p title ="I am a serious learner. I am giving all my effort daily 6 to 8 hours." class="ellipsis">I am a serious learner. I am giving all my effort daily 6 to 8 hours.</p>
+    </header>
+    <section>
+        <div class="box">
+            <h1 class="box-no">box - 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur aliquid, veniam commodi id cupiditate doloremque corrupti at dignissimos iusto similique quisquam sunt nam incidunt dolor quos fugiat? Doloribus, soluta a? Asperiores rerum officiis fugit et dolore, fugiat debitis explicabo culpa? Quas consectetur maxime, tempore nisi iste odit consequuntur facere a. In sit, ullam exercitationem dignissimos eum fugiat aut. Impedit saepe provident et ipsum molestiae obcaecati dolores veniam tempore deserunt? Minima, natus perferendis a repudiandae ut deserunt dolorum architecto. Facilis, dignissimos ipsa? Et dolorem nobis eum labore odio quisquam numquam, veniam asperiores sint velit, quos facilis animi autem cumque quis eaque, similique ipsam nulla voluptates inventore? Aperiam similique rem at illum quis quaerat veritatis libero cupiditate saepe dolorem quas, velit soluta. Sapiente corrupti asperiores ipsam provident, aliquid impedit magni explicabo ea minus voluptates nihil. Natus neque quidem suscipit eveniet quis, vitae provident maiores laboriosam itaque vel reiciendis dolor fugiat sapiente libero earum similique voluptatum, cupiditate iusto. Explicabo error eaque tenetur deleniti, odit quo accusamus ullam. Explicabo quae quia neque culpa minus tempora aperiam nihil. Enim commodi quod ducimus corrupti repellat nostrum cupiditate, placeat qui quia dolore, dolorum necessitatibus molestiae rem libero, iusto earum nihil hic error! Vero aut pariatur velit.</p>
+        </div>
+        <div class="box">
+            <h1 class="box-no">box - 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni quos, nobis perspiciatis minima ducimus praesentium impedit itaque accusantium deserunt porro corrupti ratione culpa totam dicta voluptas est mollitia dolor quidem non maxime, quis nihil labore. Ducimus optio nihil repellendus ea veniam nemo autem, facilis ipsa, doloremque possimus deleniti id rem architecto ut quidem recusandae dignissimos, atque mollitia? Aliquid eaque, omnis atque itaque officiis voluptates aut. Praesentium obcaecati est iusto! Error, aliquid? Ipsam asperiores quos accusantium ducimus, cupiditate tenetur repudiandae facilis id laborum accusamus incidunt iure voluptate, alias, eius praesentium. Accusantium a enim odit ut modi magnam rerum eligendi quibusdam? Beatae autem distinctio, reprehenderit, accusamus doloremque voluptates nisi quia corporis quibusdam vel officia iste temporibus, rerum architecto saepe. Repudiandae veniam distinctio voluptas doloremque ex, optio numquam ad, non magnam sequi modi aperiam possimus fugit nihil quia quasi? Perferendis vel unde ab minus hic, est ducimus fuga. Ratione veniam sunt culpa velit harum rem minima, corrupti quibusdam consectetur dicta non natus soluta ipsa expedita illum totam! Labore quos dolorem cupiditate eum tempore similique, possimus unde sapiente in doloribus inventore voluptate ducimus vero perferendis ut exercitationem deserunt blanditiis ipsa enim soluta incidunt rem officiis. Asperiores nostrum quas nisi necessitatibus quasi soluta impedit?</p>
+            </div>
+        <div class="box">
+            <h1 class="box-no">box - 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eius quasi quibusdam aliquam nulla, assumenda fuga reprehenderit mollitia dolorum vitae.</p>
+        </div>
+    </section>
+</body>
+</html>
